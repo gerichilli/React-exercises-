@@ -1,0 +1,182 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  background: linear-gradient(90deg, #f0c28e, #f1ac9a) no-repeat;
+  min-height: 100vh;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 300;
+  font-size: 1.6rem;
+  padding-bottom: 3rem;
+}
+
+.heading {
+  color: #312c51;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 5rem 3rem;
+  font-size: 6rem;
+}
+
+#content {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.timer-card {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.08);
+  background: #312c51;
+  padding: 2rem;
+}
+
+.timer-card > * + *,
+.timerlist > * + *,
+.dashboard > * + * {
+  margin-top: 2rem;
+}
+
+.timer-content {
+  color: #ffffff;
+}
+
+.timer-title {
+  font-size: 2.4rem;
+  color: #efc28e;
+  font-weight: 400;
+}
+
+.timer-project {
+  font-size: 1.4rem;
+}
+
+.timer-count {
+  font-size: 4rem;
+  text-align: center;
+  color: #efc28e;
+  font-weight: 500;
+}
+
+.timer-button {
+  display: flex;
+}
+
+.timer-button > * + * {
+  margin-left: 1em;
+}
+
+.timer-button-center {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  flex-grow: 1;
+  font-size: 1.6rem;
+  padding: 0.8em 1.2em;
+  background: transparent;
+  border-radius: 5px;
+  border: 1px solid currentColor;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.btn-start {
+  color: #f05945;
+}
+
+.btn-stop {
+  color: #efc28e;
+}
+
+.btn-update {
+  color: #9ddfd3;
+}
+
+.btn-cancel {
+  color: #f05945;
+}
+
+.btn-plus {
+  position: relative;
+  width: 5rem;
+  height: 5rem;
+  background: #312c51;
+  color: #efc28e;
+  border-radius: 50%;
+  box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.08);
+  margin: 0 auto;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
+.btn-plus:active {
+  box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.3),
+    inset 3px 3px 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+.action-container {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  text-align: right;
+  margin-right: -0.5em;
+}
+
+.icon {
+  padding: 0.5em;
+  cursor: pointer;
+}
+
+.form > * + * {
+  margin-top: 2em;
+}
+
+.field > label,
+.field > input {
+  display: block;
+  width: 100%;
+}
+
+.field > label {
+  color: #efc28e;
+  font-weight: 400;
+  margin-bottom: 0.5em;
+}
+
+.field > input,
+.field > input:focus {
+  height: 4rem;
+  padding: 1em;
+  font-size: 1.4rem;
+  font-weight: 400;
+  background: transparent;
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.1)
+  );
+  color: #ffffff;
+}
+
+input,
+input:focus,
+button {
+  border: none;
+  outline: none;
+  font: inherit;
+  background: transparent;
+}
