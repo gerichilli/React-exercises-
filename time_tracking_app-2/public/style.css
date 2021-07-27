@@ -29,8 +29,15 @@ body {
   font-size: 6rem;
 }
 
+.spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 #content {
   width: 500px;
+  min-height: 50vh;
   margin: 0 auto;
 }
 
